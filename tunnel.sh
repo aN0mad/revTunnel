@@ -5,7 +5,7 @@
 
 # Variables to set
 IP="<IP>"
-USER="<USER>"
+USER="sshtunuser"
 sshkey="<ID_RSA>"
 
 # trap ctrl-c and call ctrl_c()
@@ -25,13 +25,14 @@ function printHelp {
     echo ""
     echo "-l - Local port to send (Required)"
     echo "-r - Remote port to bind (Required)"
+    echo ""
+    echo "Example: ./tunnel.sh -l 80 -r 9001"
 }
 
 #### START SCRIPT
 
 # Check the number of arguments passed in
 if [ "$#" -ne 4 ]; then
-    echo "$#"
     printHelp
     exit
 fi
