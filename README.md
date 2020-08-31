@@ -8,7 +8,7 @@ Clone the project and then install dependencies:
 apt install autossh
 ```  
 
-Further setup:
+### Further setup:
 * Create a user on the jump box 
 ```
 sudo useradd -s /bin/true -m sshtunuser
