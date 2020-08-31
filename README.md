@@ -10,8 +10,10 @@ apt install autossh
 
 Further setup:
 * Create a user on the jump box 
-`sudo useradd -s /bin/true -m sshtunuser`
-`mkdir /home/sshtunuser/.ssh`
+```
+sudo useradd -s /bin/true -m sshtunuser
+mkdir /home/sshtunuser/.ssh
+```
 
 * Create a public/private key pair for the user
 ```
