@@ -33,6 +33,8 @@ Match User sshtunuser
 	ClientAliveCountMax 3
 ```
 
+* Change the variables: `IP`, `USER`, and `sshkey` at the top of the tunnel.sh script.
+
 ## Help menu
 ```
 ./tunnel.sh
